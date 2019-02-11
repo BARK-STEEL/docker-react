@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t skipteel/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run skipteel/docker-react yarn test -- --coverage
