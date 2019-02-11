@@ -1,3 +1,5 @@
+SKIP_PREFLIGHT_CHECK=true
+
 FROM node:alpine
 
 WORKDIR '/app'
